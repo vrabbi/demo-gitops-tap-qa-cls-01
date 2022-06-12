@@ -1,0 +1,16 @@
+apiVersion: carto.run/v1alpha1
+kind: Deliverable
+metadata:
+  name: web-app-02
+  labels:
+    app.kubernetes.io/part-of: web-app-02
+    apps.tanzu.vmware.com/has-tests: "true"
+    apps.tanzu.vmware.com/workload-type: web
+    demo: gitops
+    app.kubernetes.io/component: deliverable
+    carto.run/workload-name: web-app-02
+    app.tanzu.vmware.com/deliverable-type: web
+spec:
+  source:
+    image: harbor.vrabbi.cloud/tap/web-app-02-demo-bundle:efbe7266-04db-4aa3-82d8-f758003e8571
+
