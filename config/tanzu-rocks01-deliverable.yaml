@@ -1,0 +1,16 @@
+apiVersion: carto.run/v1alpha1
+kind: Deliverable
+metadata:
+  name: tanzu-rocks01
+  labels:
+    app.kubernetes.io/part-of: tanzu-rocks01
+    apps.tanzu.vmware.com/has-tests: "true"
+    apps.tanzu.vmware.com/workload-type: web
+    demo: gitops
+    app.kubernetes.io/component: deliverable
+    carto.run/workload-name: tanzu-rocks01
+    app.tanzu.vmware.com/deliverable-type: web
+spec:
+  source:
+    image: harbor.vrabbi.cloud/tap/tanzu-rocks01-demo-bundle:aa79a3f3-3ee5-4031-ac8a-2604d179ff91
+
